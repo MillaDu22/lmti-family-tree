@@ -1,0 +1,66 @@
+.flag-display {
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px auto 0;
+}
+
+.flag-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height:200px;
+    text-align: center;
+    border-radius: 50%;
+    font-size:20px;
+    font-family: 'Ysabeau SC', sans-serif;
+    box-shadow: 0 3px 4px white, inset 0 -2px 5px rgb(223, 223, 223),
+    inset 0 4px 15px rgba(208, 208, 208, 0.245), 0 0 0 2px white, 0 0 0 5px white,
+    0 0 0 5.5px #e8e8e8;
+}
+
+.flag-image {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:1070px) {
+
+    .flag-item {
+        width:130px;
+        height:130px;
+        font-size:18px;
+    }
+    
+    .flag-image {
+        margin-top:15px;
+        margin-bottom: 0px;
+        width: 55px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .flag-display {
+        width:100%;
+        min-width:320px;
+        margin:20px auto 20px;
+    }
+    .flag-item {
+        width:70px;
+        height:70px;
+        font-size:12px;
+    }
+    
+    .flag-image {
+        margin-top:8px;
+        margin-bottom: 0px;
+        width: 25px;
+    }
+}
